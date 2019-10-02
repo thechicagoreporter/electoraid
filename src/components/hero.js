@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
-import img from '../images/back-test.jpg';
+import img from '../images/flag-back.jpg';
 
 const FullHero = styled.section`
     background: url(${img});
@@ -17,7 +17,7 @@ const FullHero = styled.section`
 `
 
 const Color = styled.div`
-    background: rgba(0,103,177,.7);
+    background: rgba(0,103,177,.9);
     color: #fff;
     width: 100%;
     padding: -20px;
@@ -46,7 +46,7 @@ const Hero = () => {
             <Color>
                 <div>
                     <LogoImg src={require('../images/electoraid-logo-white.png')} />
-                    <h1>Electoraid is the latest election coverage tool <br/> by The Chicago Reporter for... </h1>
+                    <h1>is the latest election coverage tool <br/> by The Chicago Reporter for... </h1>
                 </div>
             </Color>
         </FullHero>
