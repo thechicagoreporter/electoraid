@@ -69,7 +69,6 @@ const Hero = () => {
                     <h3>Leverage elections to augment local government accountability.</h3>
                     <Input>
                         <h4>Unclutter your election coverage strategy.</h4>
-                        <Form />
                     </Input>
                 </div>
             </Color>

@@ -64,24 +64,24 @@ const Unit = () => {
             <UnitOne>
                 <ColorRed>
                     <div>
-                        <Sub>It’s for journalists, by journalists</Sub>
-                        <Promo>We wanted to build the most optimal solution for informing, engaging, and educating the public on the elections happening in their backyard and nationwide.</Promo>
+                        <Sub>Build access, build trust.</Sub>
+                        <Promo>Create tools together, deepen the value of politics reporting.</Promo>
                     </div>
                 </ColorRed>
             </UnitOne>
             <UnitOne>
                 <ColorWhite>
                     <div>
-                        <Sub>Built by experts on election coverage</Sub>
-                        <Promo>The Chicago Reporter prides itself on its award-winning investigative data journalism and expertise. We know how to read the data. We know how to make it easy for our audiences to understand the data, too.</Promo>
+                        <Sub>Collaborate with other media outlets.</Sub>
+                        <Promo>Create tools together, deepen the value of politics reporting.</Promo>
                     </div>
                 </ColorWhite>
             </UnitOne>
             <UnitOne>
                 <ColorRed>
                     <div>
-                        <Sub>It has an open API so we can connect other sources of local data to make it richer</Sub>
-                        <Promo>We want to build with you! The more nerds the merrier. We’re always looking to make our tools better that can work for you and your audiences.</Promo>
+                        <Sub>Build trust.</Sub>
+                        <Promo>Create tools together, deepen the value of politics reporting.</Promo>
                     </div>
                 </ColorRed>
             </UnitOne>

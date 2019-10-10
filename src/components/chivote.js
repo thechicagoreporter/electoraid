@@ -2,7 +2,7 @@ import React from "react"
 import styled from 'styled-components'
 
 const OldApp = styled.section`
-    border: 30px solid rgba(0,103,177,1);
+    border: 30px solid rgba(147,242,5,1);
 
     @media (max-width: 530px) {
         border: none;
@@ -46,9 +46,9 @@ const ChiVote = () => {
             <TwoCol>
             <img src={require('../images/back-test.jpg')} />
                 <div>
-                    <h2>Copy for Chivote project here</h2>
-                    <p>Bacon ipsum dolor sit amet salami jowl corned beef, andouille flank tongue ball tip kielbasa pastrami tri-tip meatloaf short loin beef biltong. Cow bresaola ground round strip steak fatback meatball shoulder leberkas pastrami sausage corned beef t-bone pork belly drumstick. Bacon ipsum dolor sit amet salami jowl corned beef, andouille flank tongue ball tip kielbasa pastrami tri-tip meatloaf short loin beef biltong. Cow bresaola ground round strip steak fatback meatball shoulder leberkas pastrami sausage corned beef t-bone pork belly drumstick.</p>
-                    <PromoLink>Visit ChiVote</PromoLink>
+                    <h2>WE’VE DONE THIS BEFORE ...</h2>
+                    <p>We introduced and implemented CHI.VOTE, core product of the Chi.vote Collective, a new group of nonpartisan media and civic organizations that believe in fostering a safer, more prosperous and more equitable and connected Chicago by creating content and tools of the highest quality and accessibility around city elections.</p>
+                    <PromoLink>Check out Chi.Vote!</PromoLink>
                 </div>
             </TwoCol>
         </OldApp>
