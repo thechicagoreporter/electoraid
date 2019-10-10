@@ -1,5 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
+import Form from '../components/simpleform.js'
+
 import img from '../images/flag-back.jpg';
 
 const FullHero = styled.section`
@@ -12,12 +14,29 @@ const FullHero = styled.section`
     h1 {
         margin: 0 auto;
         text-align: center;
-        width: 80%;
+        width: 100%;
+    }
+    h3 {
+        margin: 20px auto;
+        text-align: center;
+        width: 100%;
+    }
+`
+
+const Input = styled.div`
+    margin-top: 60px;
+
+    h4 {
+        color: rgb(147,242,5);
+        font-size: 22px;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
     }
 `
 
 const Color = styled.div`
-    background: rgba(0,103,177,.9);
+    background: rgba(79,2,89,1);
     color: #fff;
     width: 100%;
     padding: -20px;
@@ -46,7 +65,12 @@ const Hero = () => {
             <Color>
                 <div>
                     <LogoImg src={require('../images/electoraid-logo-white.png')} />
-                    <h1>is the latest election coverage tool <br/> by The Chicago Reporter for... </h1>
+                    <h1>Your newsroom’s interactive and collaborative election guide</h1>
+                    <h3>Leverage elections to augment local government accountability.</h3>
+                    <Input>
+                        <h4>Unclutter your election coverage strategy.</h4>
+                        <Form />
+                    </Input>
                 </div>
             </Color>
         </FullHero>
