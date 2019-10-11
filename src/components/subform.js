@@ -11,6 +11,10 @@ const Sub = styled.section`
 const Contain = styled.div`
     margin: 0 auto;
     width: 80%;
+
+    @media (max-width: 680px) {
+        width: 90%;
+    }
 `
 
 const TwoCol = styled.div`
@@ -24,6 +28,13 @@ const TwoCol = styled.div`
         font-size: 1.2rem;
         font-weight: 900;
         margin: .5rem 0 0 0;
+    }
+
+    @media (max-width: 900px) {
+        h2 {
+            font-size: 1rem;
+            margin: 0;
+        }
     }
 
     @media (max-width: 680px) {

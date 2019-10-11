@@ -18,6 +18,10 @@ const Contain = styled.div`
     grid-template-columns: 1fr 7fr;
     margin: 0 auto;
     width: 80%;
+    @media (max-width: 680px) {
+      grid-template-columns: 1fr 3fr;
+      width: 90%;
+  }
 `
 const LogoImg = styled.img`
     display: block;

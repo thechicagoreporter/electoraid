@@ -39,10 +39,14 @@ const Button = styled.button`
   border: none;
   border-radius: 0px 5px 5px 0px; 
   width: 60%;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+
   
   &:hover {
-    background-color:#00B227;
+    background-color:#A904BF;
     color: #fff;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+
   }
   @media (max-width: 1100px) {
     font-size: 14px;
