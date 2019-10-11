@@ -1,24 +1,31 @@
 import React from "react"
 import styled from 'styled-components'
-import img from '../images/back-test.jpg';
 
 const UnitOne = styled.section`
-    background: url(${img});
+    padding: 8rem 1rem;
     width: 100%;
+
+    @media (max-width: 680px) {
+        padding: 2rem 1rem;
+    }
 `
 
 const Grid = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    min-height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
 
-    @media (max-width: 530px) {
+    @media (max-width: 680px) {
         grid-template-columns: 1fr;
+        padding: 2rem 0;
+
     }
 `
 
 const Sub = styled.h2`
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 `
 
 const Promo = styled.p`
@@ -26,64 +33,20 @@ const Promo = styled.p`
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 `
 
-const LogoImg = styled.img`
-    display: block;
-    margin: 0 auto;
-    width: 30%;
-
-    @media (max-width: 530px) {
-        width: 90%;
-      }
-`
-
-const ColorRed = styled.div`
-    background: rgba(205, 1, 1, 1);
-    color: #fff;
-    width: 100%;
-    padding: 2rem;
-    margin: 0px;
-    overflow: hidden;
-    height: 100%;
-    z-index: 2;
-`
-
-const ColorWhite = styled.div`
-    background: rgba(255,255,255, 1);
-    color: #000;
-    width: 100%;
-    padding: 2rem;
-    margin: 0px;
-    overflow: hidden;
-    height: 100%;
-    z-index: 2;
-`
-
 const Unit = () => {
     return (
         <Grid>
             <UnitOne>
-                <ColorRed>
-                    <div>
-                        <Sub>Build access, build trust.</Sub>
-                        <Promo>Create tools together, deepen the value of politics reporting.</Promo>
-                    </div>
-                </ColorRed>
+                <Sub>Build access, build trust.</Sub>
+                <Promo>Create tools together, deepen the value of politics reporting.</Promo>
             </UnitOne>
             <UnitOne>
-                <ColorWhite>
-                    <div>
-                        <Sub>Collaborate with other media outlets.</Sub>
-                        <Promo>Create tools together, deepen the value of politics reporting.</Promo>
-                    </div>
-                </ColorWhite>
+                <Sub>Collaborate with other media outlets.</Sub>
+                <Promo>Create tools together, deepen the value of politics reporting.</Promo>
             </UnitOne>
             <UnitOne>
-                <ColorRed>
-                    <div>
-                        <Sub>Build trust.</Sub>
-                        <Promo>Create tools together, deepen the value of politics reporting.</Promo>
-                    </div>
-                </ColorRed>
+                <Sub>Build trust.</Sub>
+                <Promo>Create tools together, deepen the value of politics reporting.</Promo>
             </UnitOne>
         </Grid>
     )

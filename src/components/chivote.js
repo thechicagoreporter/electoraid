@@ -2,31 +2,27 @@ import React from "react"
 import styled from 'styled-components'
 
 const OldApp = styled.section`
-    border: 30px solid rgba(147,242,5,1);
-
-    @media (max-width: 530px) {
-        border: none;
-    }
+    border-top: 10px solid #93F205;
+    margin: 0 auto;
+    width: 80%;   
 `
 
 const TwoCol = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    margin: 0 auto;
+    grid-gap: 40px;
     padding: 100px 0;
-    width: 60%;
 
-    @media (max-width: 530px) {
-        width: 90%;
-        padding: 30px 0;
+    @media (max-width: 680px) {
+        width: 100%;
+        padding: 4rem 0;
 
         grid-template-columns: 1fr;
     }
 `
 
 const PromoLink = styled.a`
-    color: rgba(0,103,177,1);
+    color: #A904BF;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;

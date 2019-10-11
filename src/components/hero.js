@@ -2,11 +2,9 @@ import React from "react"
 import styled from 'styled-components'
 import Form from '../components/simpleform.js'
 
-import img from '../images/flag-back.jpg';
-
 const FullHero = styled.section`
-    background: url(${img});
-    background-size: cover;
+    background: rgba(79,2,89,1);
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,24 +33,11 @@ const Input = styled.div`
     }
 `
 
-const Color = styled.div`
-    background: rgba(79,2,89,1);
-    color: #fff;
-    width: 100%;
-    padding: -20px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    z-index: 2;
-`
-
 const LogoImg = styled.img`
     display: block;
     margin: 0 auto;
     width: 50%;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 
     @media (max-width: 530px) {
         width: 90%;
@@ -62,7 +47,6 @@ const LogoImg = styled.img`
 const Hero = () => {
     return (
         <FullHero>
-            <Color>
                 <div>
                     <LogoImg src={require('../images/electoraid-logo-white.png')} />
                     <h1>Your newsroom’s interactive and collaborative election guide</h1>
@@ -71,7 +55,6 @@ const Hero = () => {
                         <h4>Unclutter your election coverage strategy.</h4>
                     </Input>
                 </div>
-            </Color>
         </FullHero>
     )
 }
