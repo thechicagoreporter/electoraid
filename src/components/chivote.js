@@ -11,7 +11,7 @@ const TwoCol = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
-    padding: 100px 0;
+    padding: 50px 0;
 
     @media (max-width: 680px) {
         width: 100%;

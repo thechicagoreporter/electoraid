@@ -26,15 +26,20 @@ padding: 0 5vw;
 `
 
 const Input = styled.div`
-    margin-top: 60px;
+    margin: 60px auto 0 auto;
+    width: 60%;
 
     h4 {
         color: rgb(147,242,5);
         font-size: 22px;
-        margin: 0 auto;
+        margin: 0 auto 1.5rem auto;
         text-align: center;
         width: 100%;
     }
+
+    @media (max-width: 680px) {
+        width: 100%;
+      }
 `
 
 const LogoImg = styled.img`

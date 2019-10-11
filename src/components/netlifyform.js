@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 const Form = styled.form`
     width: 100%;
+    margin-bottom: 0;
 
     label {
         display: block;
@@ -14,8 +15,11 @@ const Form = styled.form`
 
 const FormContain = styled.div`
     display: flex;
-    margin: 1.5rem auto;
-    width: 60%;
+    margin: 0 auto;
+    width: 100%;
+    @media (max-width: 680px) {
+      width: 100%;
+    }
 `
 
 const Input = styled.input`
