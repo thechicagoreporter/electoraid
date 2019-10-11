@@ -4,11 +4,8 @@ import Form from '../components/netlifyform.js'
 
 const Sub = styled.section`
     background: rgba(79,2,89,1);
-    padding: 2rem 0;
+    padding: 3rem 0;
     width: 100%;
-    @media (max-width: 680px) {
-        padding: 1rem 0;
-    }
 `
 
 const Contain = styled.div`
@@ -21,16 +18,20 @@ const TwoCol = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    padding: 0px 0;
+    padding: 0px 0px;
 
     h2 {
         font-size: 1.2rem;
         font-weight: 900;
-        margin-top: .5rem;
+        margin: .5rem 0 0 0;
     }
 
     @media (max-width: 680px) {
         grid-template-columns: 1fr;
+
+        h2 {
+            text-align: center;
+        }
     }
 `
 
