@@ -4,36 +4,40 @@ import styled from "styled-components"
 
 const Form = styled.form`
     width: 100%;
-    text-align: center;
 
     label {
         display: block;
-        font-size: 1rem;
+        font-size: 1.4rem;
         font-weight: 600;
-        margin-bottom: 20px;
     }
 `
 
+const FormContain = styled.div`
+    display: flex;
+    margin: 1.5rem auto;
+    width: 60%;
+`
+
 const Input = styled.input`
-    text-align: center;
-    margin-top: 10px;
-    width: 100%;
-    padding: .5rem; 
+    width: 90%;
+    border: none;
+    border-radius: 5px 0px 0px 5px; 
+    padding: .5rem 1rem; 
     font-size: 1rem;
 `
 
 const Button = styled.button`
-  padding: 14px 14px;
-  background-color: rgba(0,103,177,1);
-  color: #fff;
+  padding: .5rem;
+  background-color: rgb(147,242,5);
+  color: rgba(79,2,89,1);
   font-size: 20px;
-  margin-top: 10px;
-  border-radius: 5px;
+  font-weight: 700;
   border: none;
+  border-radius: 0px 5px 5px 0px; 
   width: 60%;
   
   &:hover {
-    background-color:#000;
+    background-color:#00B227;
     color: #fff;
   }
   @media (max-width: 1100px) {
@@ -42,7 +46,7 @@ const Button = styled.button`
   }
 `
 
-class RemoteForm extends Component {
+class SplashForm extends Component {
   constructor(props) {
     super(props)
     this.ContactForm = React.createRef()
@@ -99,16 +103,13 @@ class RemoteForm extends Component {
             <input name="bot-field" onChange={this.handleChange} />
           </label>
         </p>
-        <p>
-          <label>
-            Your email address
-            <br />
-            <Input type="email" name="email" placeholder="your-name@example.com" onChange={this.handleChange} required/>
-          </label>
-        </p>
-        <Button type="submit">Subscribe</Button>
+
+        <FormContain>
+          <Input type="email" name="email" placeholder="your-name@example.com" onChange={this.handleChange} required/>
+          <Button type="submit">Subscribe</Button>
+        </FormContain>
       </Form>
     )
   }
 }
-export default RemoteForm
+export default SplashForm

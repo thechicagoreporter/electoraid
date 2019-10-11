@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Unit from "../components/units"
 import ChiVote from "../components/chivote"
-import AidForm from "../components/form"
+import Form from "../components/netlifyform"
 
 
 import SEO from "../components/seo"
@@ -16,7 +16,7 @@ const IndexPage = () => (
     <Hero />
     <Unit />
     <ChiVote />
-    <AidForm />
+    <Form />
   
   </Layout>
 )
