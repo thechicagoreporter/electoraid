@@ -13,6 +13,34 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        // language JSON resource path
+        path: `${__dirname}/src/intl`,
+        // supported language
+        languages: [`en`],
+        // language file path
+        defaultLanguage: `en`,
+        redirect: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "UA-2350659-1", // Google Analytics / GA
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+          send_pageview: false,
+        },
+        pluginConfig: {
+          // We'll dispatch our own prefixed pageviews
+          exclude: ["/*"],
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
