@@ -29,6 +29,12 @@ const Input = styled.div`
     margin: 60px auto 0 auto;
     width: 60%;
 
+
+    a {
+        text-decoration: none;
+
+    }
+
     h4 {
         color: rgb(147,242,5);
         font-size: 22px;
@@ -53,20 +59,18 @@ const LogoImg = styled.img`
       }
 `
 
-const Hero = () => {
+const Confirm = () => {
     return (
         <FullHero>
                 <Contain>
                     <a href="/"><LogoImg src={require('../images/electoraid-logo-white.png')} /></a>
-                    <h1>Your newsroom’s interactive and collaborative election guide</h1>
-                    <h3>Leverage elections to augment local government accountability.</h3>
+                    <h3>Thanks for signing up for Electoraid updates!</h3>
                     <Input>
-                        <h4>Unclutter your election coverage strategy.</h4>
-                        <Form />
+                        <a href="/"><h4>Return to homepage</h4></a>
                     </Input>
                 </Contain>
         </FullHero>
     )
 }
 
-export default Hero
+export default Confirm

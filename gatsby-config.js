@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Electoraid`,
+<<<<<<< HEAD
     description: `TK TK UPDATE`,
     author: `@chicagoreporter`,
+=======
+    description: `Everything you need to boost your local election coverage.`,
+    author: `Chicago Reporter`,
+>>>>>>> 15681bbee10fbf976a8ac4ad5c7794ee1c155003
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -46,13 +51,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `electoraid`,
+        short_name: `electoraid`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
