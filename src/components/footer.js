@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
+import { FormattedMessage } from 'gatsby-plugin-intl'
 
 const Foot = styled.section`
     background: #000;
@@ -17,11 +18,9 @@ const Footer = () => {
     return (
         <Foot>
             <Contain>
-                <p>Founded on the heels of the civil rights movement of the 1960s, The Chicago Reporter confronts racial and economic inequality, using the power of investigative journalism.</p>
-                <p>The Chicago Reporter 111 W. Jackson Blvd., Suite 820 | Chicago, IL 60604 (312) 427-4830 | tcr@chicagoreporter.com</p>
-
+                <p><FormattedMessage id="footer.description"/></p>
+                <p><FormattedMessage id="footer.address"/></p>
             </Contain>
-
         </Foot>
     )
 }

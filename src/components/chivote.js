@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
+import { FormattedMessage } from 'gatsby-plugin-intl'
 
 const OldApp = styled.section`
     border-top: 10px solid #93F205;
@@ -42,9 +43,9 @@ const ChiVote = () => {
             <TwoCol>
                 <img src={require('../images/back-test.jpg')} />
                 <div>
-                    <h2>WE’VE DONE THIS BEFORE ...</h2>
-                    <p>We introduced and implemented CHI.VOTE, core product of the Chi.vote Collective, a new group of nonpartisan media and civic organizations that believe in fostering a safer, more prosperous and more equitable and connected Chicago by creating content and tools of the highest quality and accessibility around city elections.</p>
-                    <PromoLink>Check out Chi.Vote!</PromoLink>
+                    <h2><FormattedMessage id="chivote.hed" /></h2>
+                    <p><FormattedMessage id="chivote.description"/></p>
+                    <PromoLink><FormattedMessage id="chivote.link" /></PromoLink>
                 </div>
             </TwoCol>
         </OldApp>

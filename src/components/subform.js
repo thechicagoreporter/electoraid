@@ -1,6 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
 import Form from '../components/netlifyform.js'
+import { FormattedMessage } from 'gatsby-plugin-intl'
 
 const Sub = styled.section`
     background: rgba(79,2,89,1);
@@ -52,8 +53,7 @@ const SubForm = () => {
             <Contain>
                 <TwoCol>
                     <div>
-                        <h2>Sign up for more information about Electoraid!</h2>
-
+                        <h2><FormattedMessage id="subform.signup" /></h2>
                     </div>
                     <div>
                         <Form />

@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
+import { FormattedMessage } from 'gatsby-plugin-intl'
 
 const UnitOne = styled.section`
     padding: 8rem 1rem;
@@ -37,16 +38,16 @@ const Unit = () => {
     return (
         <Grid>
             <UnitOne>
-                <Sub>Build access, build trust.</Sub>
-                <Promo>Create tools together, deepen the value of politics reporting.</Promo>
+                <Sub><FormattedMessage id="units.unit1.hed"/></Sub>
+                <Promo><FormattedMessage id="units.unit1.copy"/></Promo>
             </UnitOne>
             <UnitOne>
-                <Sub>Collaborate with other media outlets.</Sub>
-                <Promo>Create tools together, deepen the value of politics reporting.</Promo>
+                <Sub><FormattedMessage id="units.unit2.hed"/></Sub>
+                <Promo><FormattedMessage id="units.unit2.copy"/></Promo>
             </UnitOne>
             <UnitOne>
-                <Sub>Build trust.</Sub>
-                <Promo>Create tools together, deepen the value of politics reporting.</Promo>
+                <Sub><FormattedMessage id="units.unit3.hed"/></Sub>
+                <Promo><FormattedMessage id="units.unit3.copy"/></Promo>
             </UnitOne>
         </Grid>
     )

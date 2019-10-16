@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { navigate } from "gatsby"
+import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 import styled from "styled-components"
 
 const Form = styled.form`
@@ -94,6 +95,8 @@ class SplashForm extends Component {
       })
   }
   render() {
+    const { intl } = this.props
+
     return (
       <Form
         name="contact-remote"
@@ -104,7 +107,7 @@ class SplashForm extends Component {
         onSubmit={this.handleSubmit}
         ref={this.ContactForm}
       >
-        <input type="hidden" name="form-name" value="contact-remote" />
+        <input type="hidden" name="form-name" value="electoraid-contacts" />
         <p hidden>
           <label>
             Don’t fill this out:{" "}
@@ -113,11 +116,11 @@ class SplashForm extends Component {
         </p>
 
         <FormContain>
-          <Input type="email" name="email" placeholder="your-name@example.com" onChange={this.handleChange} required/>
-          <Button type="submit">Subscribe</Button>
+          <Input type="email" name="email" placeholder={intl.formatMessage({ id: 'subscribeform.placeholder'})} onChange={this.handleChange} required/>
+          <Button type="submit"><FormattedMessage id="subscribeform.submit"/></Button>
         </FormContain>
       </Form>
     )
   }
 }
-export default SplashForm
+export default injectIntl(SplashForm)
