@@ -41,7 +41,7 @@ const ChiVote = () => {
     return (
         <OldApp>
             <TwoCol>
-                <img src={require('../images/back-test.jpg')} />
+                <img src={require('../images/chi-vote-site-animation.gif')} />
                 <div>
                     <h2><FormattedMessage id="chivote.hed" /></h2>
                     <p><FormattedMessage id="chivote.description"/></p>
