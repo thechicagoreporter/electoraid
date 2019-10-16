@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
+import { FormattedMessage } from 'gatsby-plugin-intl'
 import Form from '../components/netlifyform.js'
 
 const FullHero = styled.section`
@@ -58,10 +59,10 @@ const Hero = () => {
         <FullHero>
                 <Contain>
                     <a href="/"><LogoImg src={require('../images/electoraid-logo-white.png')} /></a>
-                    <h1>Your newsroom’s interactive and collaborative election guide</h1>
-                    <h3>Leverage elections to augment local government accountability.</h3>
+                    <h1><FormattedMessage id="hero.hed" /></h1>
+                    <h3><FormattedMessage id="hero.subhed" /></h3>
                     <Input>
-                        <h4>Unclutter your election coverage strategy.</h4>
+                        <h4><FormattedMessage id="hero.inputhed" /></h4>
                         <Form />
                     </Input>
                 </Contain>

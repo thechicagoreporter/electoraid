@@ -1,5 +1,10 @@
 {
-  "title": "govbook.chicagoreporter.com",
-  "shortTitle": "GovBook",
-  "author": "The Chicago Reporter"
+  "title": "Electoraid",
+  "shortTitle": "Electoraid",
+  "author": "The Chicago Reporter",
+  "hero": {
+      "hed": "Your newsroom's interactive and collaborative election guide",
+      "subhed": "Leverage elections to augment local government accountability.",
+      "inputhed": "Unclutter your election coverage strategy."
+  }
 }
