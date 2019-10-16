@@ -1,13 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Electoraid`,
-<<<<<<< HEAD
-    description: `TK TK UPDATE`,
-    author: `@chicagoreporter`,
-=======
     description: `Everything you need to boost your local election coverage.`,
     author: `Chicago Reporter`,
->>>>>>> 15681bbee10fbf976a8ac4ad5c7794ee1c155003
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
