@@ -98,7 +98,7 @@ class SplashForm extends Component {
       <Form
         name="contact-remote"
         method="post"
-        action="/newsletter-success"
+        action="/signup-success"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={this.handleSubmit}
