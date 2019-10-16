@@ -40,7 +40,7 @@ const ChiVote = () => {
     return (
         <OldApp>
             <TwoCol>
-            <img src={require('../images/back-test.jpg')} />
+                <img src={require('../images/back-test.jpg')} />
                 <div>
                     <h2>WE’VE DONE THIS BEFORE ...</h2>
                     <p>We introduced and implemented CHI.VOTE, core product of the Chi.vote Collective, a new group of nonpartisan media and civic organizations that believe in fostering a safer, more prosperous and more equitable and connected Chicago by creating content and tools of the highest quality and accessibility around city elections.</p>
