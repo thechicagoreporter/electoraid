@@ -1,4 +1,4 @@
-const URL_PREFIX = "electoraid.com"
+const URL_PREFIX = "electoraid.org"
 
 // Dispatch prefixed pageview
 exports.onRouteUpdate = ({ location }) => {
