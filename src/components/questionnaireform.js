@@ -8,6 +8,11 @@ import Select from "react-select"
 const ROLES = [
   { value: "product manager", label: "Product Manager" },
   { value: "executive editor", label: "Executive Editor" },
+  { value: "managing editor", label: "Managing Editor" },
+  { value: "digital editor", label: "Digital Editor or Producer" },
+  { value: "designer", label: "Designer" },
+  { value: "engineer", label: "Engineer/Developer" },
+  { value: "other", label: "Other" },
 ]
 
 const SIZES = [
