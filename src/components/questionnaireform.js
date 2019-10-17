@@ -22,9 +22,9 @@ const SIZES = [
 ]
 
 const GOALS = [
-  { values: "no plans", label: "We don't have one" },
-  { values: "another vendor", label: "We are currently working with another vendor" },
-  { values: "build own", label: "We build our own interactive guide with an in-house team" },
+  { value: "no plans", label: "We don't have one" },
+  { value: "another vendor", label: "We are currently working with another vendor" },
+  { value: "build own", label: "We build our own interactive guide with an in-house team" },
 ]
 
 const Form = styled.form`
