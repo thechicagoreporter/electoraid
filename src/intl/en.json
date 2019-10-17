@@ -35,22 +35,41 @@
   "questionnaireform": {
     "intro": "Thank you for your interest in Electoraid.  Fill out the questionnaire so we can get to know you better and make sure your team can effectively use Electoraid.",
     "name": {
-        "label": "Name",
+        "label": "Name *",
         "instructions": "Your first and last name.",
         "placeholder": "My name"
     },
     "email": {
-        "label": "Email",
+        "label": "Email *",
         "instructions": "Your company email address.",
         "placeholder": "your-name@example.com"
     },
     "company": {
-        "label": "Company/organization",
+        "label": "Company/organization *",
         "instructions": "Where do you work?",
         "placeholder": "My organization"
     },
     "referral": {
         "label": "How did you hear about us?"
+    },
+    "role": {
+        "label": "Role/position *",
+        "instructions": "What is your position at your organization? Select all that apply."
+    },
+    "goals": {
+        "label": "Election coverage goals *",
+        "instructions": "What are your current plans for election coverage for 2020?"
+    },
+    "goalsdescription": {
+        "instructions": "Tell us more about your election plans (optional)."
+    },
+    "schedule": {
+        "label": "Schedule a chat",
+        "instructions": "We hope to chat with you soon! What day and time work for you and/or your team?"
+    },
+    "size": {
+        "label": "Team size *",
+        "instructions": "How many people are on your team (working on your election guide or your newsroom overall)?"
     },
     "submit": "Submit"
   },

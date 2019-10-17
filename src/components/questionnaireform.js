@@ -1,7 +1,26 @@
 import React, { Component } from "react"
-import { navigate } from "gatsby"
+import queryString from 'query-string'
 import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 import styled from "styled-components"
+import Select from "react-select"
+
+// @TODO these strings should be translated
+const ROLES = [
+  { value: "product manager", label: "Product Manager" },
+  { value: "executive editor", label: "Executive Editor" },
+]
+
+const SIZES = [
+  { value: "1 - 5", label: "1 - 5" },
+  { value: "5 - 10", label: "5 - 10" },
+  { value: "more than 10", label: "More than 10" },
+]
+
+const GOALS = [
+  { values: "no plans", label: "We don't have one" },
+  { values: "another vendor", label: "We are currently working with another vendor" },
+  { values: "build own", label: "We build our own interactive guide with an in-house team" },
+]
 
 const Form = styled.form`
     width: 100%;
@@ -18,8 +37,13 @@ const FormContain = styled.div`
     padding: 1.4rem;
     width: 100%;
     background-color: #fff;
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
+`
+
+const SelectWrapper = styled.div`
+    margin-bottom: 2.5rem;
+    margin-top: .5rem;
 `
 
 const Input = styled.input`
@@ -98,6 +122,11 @@ class QuestionnaireForm extends Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
+  componentDidMount() {
+    const parsed = queryString.parse(window.location.search)
+    this.setState({ email: (parsed.email || "") })
+  }
+
   // handleSubmit = e => {
   //   e.preventDefault()
   //   const form = this.ContactForm.current
@@ -121,6 +150,7 @@ class QuestionnaireForm extends Component {
 
   render() {
     const { intl } = this.props
+    const { email } = this.state
 
     return (
       <Form
@@ -145,16 +175,35 @@ class QuestionnaireForm extends Component {
           
           <Label for="email"><FormattedMessage id="questionnaireform.email.label" /></Label>
           <InstructionLabel for="email"><FormattedMessage id="questionnaireform.email.instructions" /></InstructionLabel>
-          <Input type="email" name="email" placeholder={intl.formatMessage({id: "questionnaireform.email.placeholder"})}></Input>
+          <Input required type="email" name="email" value={email} onChange={this.handleChange} placeholder={intl.formatMessage({id: "questionnaireform.email.placeholder"})}></Input>
 
           <Label for="name"><FormattedMessage id="questionnaireform.name.label" /></Label>
           <InstructionLabel for="name"><FormattedMessage id="questionnaireform.name.instructions" /></InstructionLabel>
-          <Input type="text" name="name" placeholder={intl.formatMessage({id: "questionnaireform.name.placeholder"})}></Input>
+          <Input required type="text" name="name" placeholder={intl.formatMessage({id: "questionnaireform.name.placeholder"})}></Input>
 
           <Label for="company"><FormattedMessage id="questionnaireform.company.label" /></Label>
           <InstructionLabel for="company"><FormattedMessage id="questionnaireform.company.instructions" /></InstructionLabel>
-          <Input type="text" name="company" placeholder={intl.formatMessage({id: "questionnaireform.company.placeholder"})}></Input>
+          <Input required type="text" name="company" placeholder={intl.formatMessage({id: "questionnaireform.company.placeholder"})}></Input>
 
+          <Label for="role"><FormattedMessage id="questionnaireform.role.label" /></Label>
+          <InstructionLabel for="company"><FormattedMessage id="questionnaireform.role.instructions" /></InstructionLabel>
+          <SelectWrapper><Select options={ROLES} isMulti={true} /></SelectWrapper>
+          
+          <Label for="size"><FormattedMessage id="questionnaireform.size.label" /></Label>
+          <InstructionLabel for="company"><FormattedMessage id="questionnaireform.size.instructions" /></InstructionLabel>
+          <SelectWrapper><Select options={SIZES} /></SelectWrapper>
+
+          <Label for="goals"><FormattedMessage id="questionnaireform.goals.label" /></Label>
+          <InstructionLabel for="company"><FormattedMessage id="questionnaireform.goals.instructions" /></InstructionLabel>
+          <SelectWrapper><Select options={GOALS} /></SelectWrapper>
+          
+          <InstructionLabel for="goalsdescription"><FormattedMessage id="questionnaireform.goalsdescription.instructions" /></InstructionLabel>
+          <Textarea name="goalsdescription"></Textarea>
+          
+          <Label for="schedule"><FormattedMessage id="questionnaireform.schedule.label" /></Label>
+          <InstructionLabel for="schedule"><FormattedMessage id="questionnaireform.schedule.instructions" /></InstructionLabel>
+          <Textarea name="schedule"></Textarea>
+          
           <Label for="referral"><FormattedMessage id="questionnaireform.referral.label" /></Label>
           <Textarea name="referral"></Textarea>
 
