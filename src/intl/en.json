@@ -4,27 +4,26 @@
   "author": "The Chicago Reporter",
   "hero": {
       "hed": "Your newsroom's interactive and collaborative election guide",
-      "subhed": "Leverage elections to augment local government accountability.",
-      "inputhed": "Unclutter your election coverage strategy."
+      "inputhed": "Unclutter your election coverage strategy today"
   },
   "units": {
     "unit1": {
-        "hed": "Build access, build trust.",
-        "copy": "Create tools together, deepen the value of politics reporting."
+        "hed": "Build access, build trust",
+        "copy": "Augment local government accountability and engage voters"
     },
     "unit2": {
-        "hed": "Collaborate with other media outlets.",
-        "copy": "Create tools together, deepen the value of politics reporting."
+        "hed": "Streamline the tech build",
+        "copy": "Don’t let technology be an obstacle or barrier to you creating an interactive election guide"
     },
     "unit3": {
-        "hed": "Build trust.",
-        "copy": "Create tools together, deepen the value of politics reporting."
+        "hed": "Collaborate and engage",
+        "copy": "Foster efficient collaboration within and outside your newsroom"
     }
   },
   "chivote": {
       "hed": "We've done this before ...",
-      "description": "We introduced and implemented CHI.VOTE, core product of the Chi.vote Collective, a new group of nonpartisan media and civic organizations that believe in fostering a safer, more prosperous and more equitable and connected Chicago by creating content and tools of the highest quality and accessibility around city elections",
-      "link": "Check out Chi.Vote!"
+      "description": "We introduced and implemented {link}, the core product of the Chi.Vote Collective, a new group of nonpartisan media and civic organizations that believe in fostering a safer, more prosperous and more equitable and connected Chicago by creating content and tools of the highest quality and accessibility around city elections.",
+      "links": "Check out Chi.Vote!"
   },
   "subscribeform": {
       "placeholder": "your-name@example.com",
