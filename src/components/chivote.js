@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
-import { FormattedMessage } from 'gatsby-plugin-intl'
+import { FormattedMessage, FormattedHTMLMessage } from 'gatsby-plugin-intl'
 
 const OldApp = styled.section`
     border-top: 10px solid #93F205;
@@ -44,8 +44,8 @@ const ChiVote = () => {
                 <img src={require('../images/chi-vote-site-animation.gif')} />
                 <div>
                     <h2><FormattedMessage id="chivote.hed" /></h2>
-                    <p><FormattedMessage id="chivote.description"/></p>
-                    <PromoLink><FormattedMessage id="chivote.link" /></PromoLink>
+                    <p><FormattedHTMLMessage id="chivote.description" /></p>
+                    <PromoLink><FormattedHTMLMessage id="chivote.links" /></PromoLink>
                 </div>
             </TwoCol>
         </OldApp>
