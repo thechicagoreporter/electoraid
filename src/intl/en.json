@@ -73,6 +73,10 @@
     },
     "submit": "Submit"
   },
+  "confirmation": {
+      "message": "<p>Thank you for your interest in Electoraid. Elections are the lifeblood of American democracy and we know how much newsrooms pour into their election resources. We’re excited that you want to make the most of this next election.</p><p>We’re excited to talk more with you soon. Have any pressing inquiries? Feel free to reach out to our product manager Olivia Obineme at <a href=\"mailto:oobineme@chicagoreporter.com\">oobineme@chicagoreporter.com</a>!</p>",
+      "backlink": "Return to homepage"
+  },
   "footer": {
       "description": "Founded on the heels of the civil rights movement of the 1960s, The Chicago Reporter confronts racial and economic inequality, using the power of investigative journalism.",
       "address": "The Chicago Reporter 111 W. Jackson Blvd., Suite 820 | Chicago, IL 60604 (312) 427-4830 | tcr@chicagoreporter.com"

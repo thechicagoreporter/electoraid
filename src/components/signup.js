@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
-import Form from '../components/netlifyform.js'
+import { FormattedMessage, FormattedHTMLMessage } from "gatsby-plugin-intl"
 
 const FullHero = styled.section`
     background: rgba(79,2,89,1);
@@ -22,7 +22,14 @@ const FullHero = styled.section`
 `
 
 const Contain = styled.div`
-padding: 0 5vw;
+    padding: 0 5vw;
+`
+
+const Message = styled.div`
+    a {
+        color: #fff;
+        font-weight: 700;
+    }
 `
 
 const Input = styled.div`
@@ -64,9 +71,9 @@ const Confirm = () => {
         <FullHero>
                 <Contain>
                     <a href="/"><LogoImg src={require('../images/electoraid-logo-white.png')} /></a>
-                    <h3>Thanks for signing up for Electoraid updates!</h3>
+                    <Message><FormattedHTMLMessage id="confirmation.message" /></Message>
                     <Input>
-                        <a href="/"><h4>Return to homepage</h4></a>
+                        <a href="/"><h4><FormattedMessage id="confirmation.backlink" /></h4></a>
                     </Input>
                 </Contain>
         </FullHero>
