@@ -41,7 +41,7 @@
     },
     "email": {
         "label": "Email *",
-        "instructions": "Your company email address.",
+        "instructions": "Your professional email address.",
         "placeholder": "your-name@example.com"
     },
     "company": {
