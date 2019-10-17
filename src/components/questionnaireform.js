@@ -114,7 +114,14 @@ class QuestionnaireForm extends Component {
   constructor(props) {
     super(props)
     this.ContactForm = React.createRef()
-    this.state = {}
+    this.state = {
+      email: "",
+      selected: {
+        goals: null,
+        roles: null,
+        size: null,
+      },
+    }
   }
   encode = data => {
     return Object.keys(data)
@@ -124,6 +131,11 @@ class QuestionnaireForm extends Component {
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
+  }
+
+  handleSelectChange = (selectedOption, node) => {
+    console.log(node.name)
+    this.setState({ selected: { [node.name]: selectedOption }})
   }
 
   componentDidMount() {
@@ -156,38 +168,38 @@ class QuestionnaireForm extends Component {
 
           <p><FormattedMessage id="questionnaireform.intro"/></p>
           
-          <Label for="email"><FormattedMessage id="questionnaireform.email.label" /></Label>
-          <InstructionLabel for="email"><FormattedMessage id="questionnaireform.email.instructions" /></InstructionLabel>
+          <Label htmlFor="email"><FormattedMessage id="questionnaireform.email.label" /></Label>
+          <InstructionLabel htmlFor="email"><FormattedMessage id="questionnaireform.email.instructions" /></InstructionLabel>
           <Input required type="email" name="email" value={email} onChange={this.handleChange} placeholder={intl.formatMessage({id: "questionnaireform.email.placeholder"})}></Input>
 
-          <Label for="name"><FormattedMessage id="questionnaireform.name.label" /></Label>
-          <InstructionLabel for="name"><FormattedMessage id="questionnaireform.name.instructions" /></InstructionLabel>
+          <Label htmlFor="name"><FormattedMessage id="questionnaireform.name.label" /></Label>
+          <InstructionLabel htmlFor="name"><FormattedMessage id="questionnaireform.name.instructions" /></InstructionLabel>
           <Input required type="text" name="name" placeholder={intl.formatMessage({id: "questionnaireform.name.placeholder"})}></Input>
 
-          <Label for="company"><FormattedMessage id="questionnaireform.company.label" /></Label>
-          <InstructionLabel for="company"><FormattedMessage id="questionnaireform.company.instructions" /></InstructionLabel>
+          <Label htmlFor="company"><FormattedMessage id="questionnaireform.company.label" /></Label>
+          <InstructionLabel htmlFor="company"><FormattedMessage id="questionnaireform.company.instructions" /></InstructionLabel>
           <Input required type="text" name="company" placeholder={intl.formatMessage({id: "questionnaireform.company.placeholder"})}></Input>
 
-          <Label for="role"><FormattedMessage id="questionnaireform.role.label" /></Label>
-          <InstructionLabel for="company"><FormattedMessage id="questionnaireform.role.instructions" /></InstructionLabel>
-          <SelectWrapper><Select isSearchable={false} options={ROLES} isMulti={true} /></SelectWrapper>
+          <Label htmlFor="role"><FormattedMessage id="questionnaireform.role.label" /></Label>
+          <InstructionLabel htmlFor="role"><FormattedMessage id="questionnaireform.role.instructions" /></InstructionLabel>
+          <SelectWrapper><Select name="role" value={this.state.selected.role} onChange={this.handleSelectChange} isSearchable={false} options={ROLES} isMulti={true} /></SelectWrapper>
           
-          <Label for="size"><FormattedMessage id="questionnaireform.size.label" /></Label>
-          <InstructionLabel for="company"><FormattedMessage id="questionnaireform.size.instructions" /></InstructionLabel>
-          <SelectWrapper><Select isSearchable={false} options={SIZES} /></SelectWrapper>
+          <Label htmlFor="size"><FormattedMessage id="questionnaireform.size.label" /></Label>
+          <InstructionLabel htmlFor="size"><FormattedMessage id="questionnaireform.size.instructions" /></InstructionLabel>
+          <SelectWrapper><Select name="size" value={this.state.selected.size} onChange={this.handleSelectChange} isSearchable={false} options={SIZES} /></SelectWrapper>
 
-          <Label for="goals"><FormattedMessage id="questionnaireform.goals.label" /></Label>
-          <InstructionLabel for="company"><FormattedMessage id="questionnaireform.goals.instructions" /></InstructionLabel>
-          <SelectWrapper><Select isSearchable={false} options={GOALS} /></SelectWrapper>
+          <Label htmlFor="goals"><FormattedMessage id="questionnaireform.goals.label" /></Label>
+          <InstructionLabel htmlFor="goals"><FormattedMessage id="questionnaireform.goals.instructions" /></InstructionLabel>
+          <SelectWrapper><Select name="goals" value={this.state.selected.goals} onChange={this.handleSelectChange} isSearchable={false} options={GOALS} /></SelectWrapper>
           
-          <InstructionLabel for="goalsdescription"><FormattedMessage id="questionnaireform.goalsdescription.instructions" /></InstructionLabel>
-          <Textarea name="goalsdescription"></Textarea>
+          <InstructionLabel htmlFor="goals-description"><FormattedMessage id="questionnaireform.goalsdescription.instructions" /></InstructionLabel>
+          <Textarea name="goals-description"></Textarea>
           
-          <Label for="schedule"><FormattedMessage id="questionnaireform.schedule.label" /></Label>
-          <InstructionLabel for="schedule"><FormattedMessage id="questionnaireform.schedule.instructions" /></InstructionLabel>
+          <Label htmlFor="schedule"><FormattedMessage id="questionnaireform.schedule.label" /></Label>
+          <InstructionLabel htmlFor="schedule"><FormattedMessage id="questionnaireform.schedule.instructions" /></InstructionLabel>
           <Textarea name="schedule"></Textarea>
           
-          <Label for="referral"><FormattedMessage id="questionnaireform.referral.label" /></Label>
+          <Label htmlFor="referral"><FormattedMessage id="questionnaireform.referral.label" /></Label>
           <Textarea name="referral"></Textarea>
 
           <Button type="submit"><FormattedMessage id="questionnaireform.submit"/></Button>
