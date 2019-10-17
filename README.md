@@ -1,3 +1,8 @@
+# Electoraid microsite
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a4abcff6-7819-4129-921b-9ab6f69c2630/deploy-status)](https://app.netlify.com/sites/vigorous-stallman-d9d3fe/deploys)
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
