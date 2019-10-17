@@ -91,13 +91,12 @@ const Button = styled.button`
   padding: .5rem;
   background-color: rgb(147,242,5);
   color: rgba(79,2,89,1);
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   border: none;
   border-radius: 5px 5px 5px 5px; 
-  width: 60%;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-
+  margin-bottom: 3rem;
   
   &:hover {
     background-color:#A904BF;
@@ -106,7 +105,7 @@ const Button = styled.button`
 
   }
   @media (max-width: 1100px) {
-    font-size: 14px;
+    font-size: 18px;
     width: 100%;
   }
 `
@@ -131,27 +130,6 @@ class QuestionnaireForm extends Component {
     const parsed = queryString.parse(window.location.search)
     this.setState({ email: (parsed.email || "") })
   }
-
-  // handleSubmit = e => {
-  //   e.preventDefault()
-  //   const form = this.ContactForm.current
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: this.encode({
-  //       "form-name": form.getAttribute("name"),
-  //       ...this.state,
-  //     }),
-  //   })
-  //     .then(response => {
-  //       navigate(`/questionnaire?email=${this.state.email}`)
-  //     })
-  //     .catch(error => {
-  //       console.log("====================================")
-  //       console.log(`error in submiting the form data:${error}`)
-  //       console.log("====================================")
-  //     })
-  // }
 
   render() {
     const { intl } = this.props
@@ -192,15 +170,15 @@ class QuestionnaireForm extends Component {
 
           <Label for="role"><FormattedMessage id="questionnaireform.role.label" /></Label>
           <InstructionLabel for="company"><FormattedMessage id="questionnaireform.role.instructions" /></InstructionLabel>
-          <SelectWrapper><Select options={ROLES} isMulti={true} /></SelectWrapper>
+          <SelectWrapper><Select isSearchable={false} options={ROLES} isMulti={true} /></SelectWrapper>
           
           <Label for="size"><FormattedMessage id="questionnaireform.size.label" /></Label>
           <InstructionLabel for="company"><FormattedMessage id="questionnaireform.size.instructions" /></InstructionLabel>
-          <SelectWrapper><Select options={SIZES} /></SelectWrapper>
+          <SelectWrapper><Select isSearchable={false} options={SIZES} /></SelectWrapper>
 
           <Label for="goals"><FormattedMessage id="questionnaireform.goals.label" /></Label>
           <InstructionLabel for="company"><FormattedMessage id="questionnaireform.goals.instructions" /></InstructionLabel>
-          <SelectWrapper><Select options={GOALS} /></SelectWrapper>
+          <SelectWrapper><Select isSearchable={false} options={GOALS} /></SelectWrapper>
           
           <InstructionLabel for="goalsdescription"><FormattedMessage id="questionnaireform.goalsdescription.instructions" /></InstructionLabel>
           <Textarea name="goalsdescription"></Textarea>
