@@ -73,7 +73,6 @@ class SplashForm extends Component {
   handleSubmit = e => {
     e.preventDefault()
     const form = this.ContactForm.current
-
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -83,10 +82,7 @@ class SplashForm extends Component {
       }),
     })
       .then(response => {
-        console.log("====================================")
-        console.log(`${JSON.stringify(response, null, 2)}`)
-        console.log("====================================")
-        navigate(form.getAttribute("action"))
+        navigate(`/questionnaire?email=${this.state.email}`)
       })
       .catch(error => {
         console.log("====================================")
@@ -99,9 +95,9 @@ class SplashForm extends Component {
 
     return (
       <Form
-        name="contact-remote"
+        name="electoraid-contacts"
         method="post"
-        action="/signup-success"
+        action="/questionnaire"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={this.handleSubmit}

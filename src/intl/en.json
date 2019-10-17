@@ -32,6 +32,28 @@
   "subform": {
       "signup": "Sign up for more information about Electoraid!"
   },
+  "questionnaireform": {
+    "intro": "Thank you for your interest in Electoraid.  Fill out the questionnaire so we can get to know you better and make sure your team can effectively use Electoraid.",
+    "name": {
+        "label": "Name",
+        "instructions": "Your first and last name.",
+        "placeholder": "My name"
+    },
+    "email": {
+        "label": "Email",
+        "instructions": "Your company email address.",
+        "placeholder": "your-name@example.com"
+    },
+    "company": {
+        "label": "Company/organization",
+        "instructions": "Where do you work?",
+        "placeholder": "My organization"
+    },
+    "referral": {
+        "label": "How did you hear about us?",
+    },
+    "submit": "Submit"
+  },
   "footer": {
       "description": "Founded on the heels of the civil rights movement of the 1960s, The Chicago Reporter confronts racial and economic inequality, using the power of investigative journalism.",
       "address": "The Chicago Reporter 111 W. Jackson Blvd., Suite 820 | Chicago, IL 60604 (312) 427-4830 | tcr@chicagoreporter.com"
