@@ -8,7 +8,8 @@ const FullHero = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     h1 {
         margin: 0 auto;
         text-align: center;
