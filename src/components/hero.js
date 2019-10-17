@@ -60,7 +60,6 @@ const Hero = () => {
                 <Contain>
                     <a href="/"><LogoImg src={require('../images/electoraid-logo-white.png')} /></a>
                     <h1><FormattedMessage id="hero.hed" /></h1>
-                    <h3><FormattedMessage id="hero.subhed" /></h3>
                     <Input>
                         <h4><FormattedMessage id="hero.inputhed" /></h4>
                         <Form />
