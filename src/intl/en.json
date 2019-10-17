@@ -33,11 +33,11 @@
       "signup": "Sign up for more information about Electoraid!"
   },
   "questionnaireform": {
-    "intro": "Thank you for your interest in Electoraid.  Fill out the questionnaire so we can get to know you better and make sure your team can effectively use Electoraid.",
+    "intro": "Thank you for your interest in Electoraid. Fill out the questionnaire so we can get to know you better and make sure your team can effectively use Electoraid.",
     "name": {
         "label": "Name *",
         "instructions": "Your first and last name.",
-        "placeholder": "My name"
+        "placeholder": "Your name"
     },
     "email": {
         "label": "Email *",
@@ -47,7 +47,7 @@
     "company": {
         "label": "Company/organization *",
         "instructions": "Where do you work?",
-        "placeholder": "My organization"
+        "placeholder": "Your organization"
     },
     "referral": {
         "label": "How did you hear about us?"
