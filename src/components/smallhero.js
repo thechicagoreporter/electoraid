@@ -1,7 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
 import { FormattedMessage } from 'gatsby-plugin-intl'
-import Form from '../components/netlifyform.js'
 
 const FullHero = styled.section`
     background: rgba(79,2,89,1);
