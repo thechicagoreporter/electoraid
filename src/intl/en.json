@@ -23,7 +23,7 @@
   "chivote": {
       "hed": "We've done this before ...",
       "description": "We introduced and implemented <a href=\"https://chi.vote\">CHI.VOTE</a>, the core product of the Chi.Vote Collective, a new group of nonpartisan media and civic organizations that believe in fostering a safer, more prosperous and more equitable and connected Chicago by creating content and tools of the highest quality and accessibility around city elections.",
-      "links": "Read what others had to say about Chi.Vote <a href=\"https://www.robertfeder.com/2019/01/14/robservations-five-media-groups-launch-election-website/\">here</a>, <a href=\"https://www.youtube.com/watch?v=fQrzunw78YU\">here</a>, and <a href=\"https://www.cjr.org/united_states_project/chicago-journalism.php\">here</a>."
+      "links": "Read what others had to say about Chi.Vote: <br/> <a href=\"https://www.robertfeder.com/2019/01/14/robservations-five-media-groups-launch-election-website/\">Robert Feder</a> | <a href=\"https://www.youtube.com/watch?v=fQrzunw78YU\">ABC 7 Chicago</a> | <a href=\"https://www.cjr.org/united_states_project/chicago-journalism.php\">Columbia Journalism Review</a>"
   },
   "subscribeform": {
       "placeholder": "your-name@example.com",
@@ -33,11 +33,11 @@
       "signup": "Sign up for more information about Electoraid!"
   },
   "questionnaireform": {
-    "intro": "Thank you for your interest in Electoraid.  Fill out the questionnaire so we can get to know you better and make sure your team can effectively use Electoraid.",
+    "intro": "Thank you for your interest in Electoraid. Fill out the questionnaire so we can get to know you better and make sure your team can effectively use Electoraid.",
     "name": {
         "label": "Name *",
         "instructions": "Your first and last name.",
-        "placeholder": "My name"
+        "placeholder": "Your name"
     },
     "email": {
         "label": "Email *",
@@ -47,7 +47,7 @@
     "company": {
         "label": "Company/organization *",
         "instructions": "Where do you work?",
-        "placeholder": "My organization"
+        "placeholder": "Your organization"
     },
     "referral": {
         "label": "How did you hear about us?"
