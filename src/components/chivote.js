@@ -22,18 +22,20 @@ const TwoCol = styled.div`
     }
 `
 
-const PromoLink = styled.a`
-    color: #A904BF;
+const PromoLink = styled.p`
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
-    text-decoration: none;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 
-    &:hover {
-        color: #000;
+    a {
+        color: #A904BF;
+        text-decoration: none;
         transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 
+        &:hover {
+            color: #000;
+            transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
     }
 `
 
