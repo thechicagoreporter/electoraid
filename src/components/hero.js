@@ -1,7 +1,9 @@
 import React from "react"
 import styled from 'styled-components'
 import { FormattedMessage } from 'gatsby-plugin-intl'
+import { FiArrowDown } from 'react-icons/fi'
 import Form from '../components/netlifyform.js'
+
 
 const FullHero = styled.section`
     background: rgba(79,2,89,1);
@@ -9,7 +11,8 @@ const FullHero = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
+    position: relative;
     h1 {
         margin: 0 auto;
         text-align: center;
@@ -19,6 +22,14 @@ const FullHero = styled.section`
         margin: 20px auto;
         text-align: center;
         width: 100%;
+    }
+    svg {
+        position: absolute;
+        left: calc(50% - 10px);
+        bottom: 5vh;
+        margin: 5vh auto 0 auto;
+        font-size: 30px;
+        opacity: 0.7;
     }
 `
 
@@ -64,6 +75,7 @@ const SmallHero = () => {
                         <h4><FormattedMessage id="hero.inputhed" /></h4>
                         <Form />
                     </Input>
+                    <FiArrowDown />
                 </Contain>
         </FullHero>
     )
