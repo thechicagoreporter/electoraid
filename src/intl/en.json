@@ -22,8 +22,8 @@
   },
   "chivote": {
       "hed": "We've done this before ...",
-      "description": "We introduced and implemented <a href=\"https://chi.vote\">CHI.VOTE</a>, the core product of the Chi.Vote Collective, a new group of nonpartisan media and civic organizations that believe in fostering a safer, more prosperous and more equitable and connected Chicago by creating content and tools of the highest quality and accessibility around city elections.",
-      "links": "Read what others had to say about Chi.Vote: <br/> <a href=\"https://www.robertfeder.com/2019/01/14/robservations-five-media-groups-launch-election-website/\">Robert Feder</a> | <a href=\"https://www.youtube.com/watch?v=fQrzunw78YU\">ABC 7 Chicago</a> | <a href=\"https://www.cjr.org/united_states_project/chicago-journalism.php\">Columbia Journalism Review</a>"
+      "description": "We introduced and implemented <a href=\"https://chi.vote/archive/2019-feb-26/">CHI.VOTE</a>, the core product of the Chi.Vote Collective, a new group of nonpartisan media and civic organizations that believe in fostering a safer, more prosperous and more equitable and connected Chicago by creating content and tools of the highest quality and accessibility around city elections.",
+      "links": "Read what others had to say about Chi.Vote: <br/> <a href=\"https://www.robertfeder.com/2019/01/14/robservations-five-media-groups-launch-election-website/\">Robert Feder</a> | <a href=\"https://www.youtube.com/watch?v=fQrzunw78YU\">ABC 7 Chicago</a> | <a href=\"https://www.cjr.org/united_states_project/chicago-journalism.php\">Columbia Journalism Review</a> | <a href=\"https://www.lenfestinstitute.org/solution-set/these-chicago-news-orgs-worked-together-to-create-a-collaborative-voting-guide\">Lenfest Solution Set</a> | <a href=\"https://inn.org/2019/04/chicago-inn-amplify-members-collaborate-on-online-voter-tool-for-city-elections\">Institute for Nonprofit News</a>"
   },
   "subscribeform": {
       "placeholder": "your-name@example.com",
@@ -58,7 +58,7 @@
     },
     "goals": {
         "label": "Election coverage goals *",
-        "instructions": "What are your current plans for election coverage for 2020?"
+        "instructions": "What are your current plans for your 2020 election coverage?"
     },
     "goalsdescription": {
         "instructions": "Tell us more about your election plans (optional)."
@@ -74,7 +74,7 @@
     "submit": "Submit"
   },
   "confirmation": {
-      "message": "<p>Thank you for your interest in Electoraid. Elections are the lifeblood of American democracy and we know how much newsrooms pour into their election resources. We’re excited that you want to make the most of this next election.</p><p>We’re excited to talk more with you soon. Have any pressing inquiries? Feel free to reach out to our product manager Olivia Obineme at <a href=\"mailto:oobineme@chicagoreporter.com\">oobineme@chicagoreporter.com</a>!</p>",
+      "message": "<p>Thank you for your interest in Electoraid. Elections are the lifeblood of American democracy and we know how much resources newsrooms pour into their election coverage. We’re excited that you want to make the most of this next election.</p><p>We’re excited to talk more with you soon. Have any pressing inquiries? Feel free to reach out to our product manager Olivia Obineme at <a href=\"mailto:oobineme@chicagoreporter.com\">oobineme@chicagoreporter.com</a>!</p>",
       "backlink": "Return to homepage"
   },
   "footer": {
