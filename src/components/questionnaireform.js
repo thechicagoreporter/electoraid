@@ -7,6 +7,7 @@ import Select from "react-select"
 // @TODO these strings should be translated
 const ROLES = [
   { value: "product manager", label: "Product Manager" },
+  { value: "publisher", label: "Publisher"},
   { value: "executive editor", label: "Executive Editor" },
   { value: "managing editor", label: "Managing Editor" },
   { value: "digital editor", label: "Digital Editor or Producer" },
@@ -23,6 +24,7 @@ const SIZES = [
 
 const GOALS = [
   { value: "no plans", label: "We don't have one" },
+  { value: "in process", label: "We are in the process of developing a plan" },
   { value: "another vendor", label: "We are currently working with another vendor" },
   { value: "build own", label: "We build our own interactive guide with an in-house team" },
 ]

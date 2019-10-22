@@ -82,7 +82,8 @@ class SplashForm extends Component {
       }),
     })
       .then(response => {
-        navigate(`/questionnaire?email=${this.state.email}`)
+        const email = encodeURIComponent(this.state.email)
+        navigate(`/questionnaire?email=${email}`)
       })
       .catch(error => {
         console.log("====================================")
