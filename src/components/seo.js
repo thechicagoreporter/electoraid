@@ -41,7 +41,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: site.siteMetadata.title,
+        },
+        {
+          property: `og:image`,
+          content: `https://electoraid.org/social-share.png`,
         },
         {
           property: `og:description`,
